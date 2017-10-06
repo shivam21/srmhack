@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Cropcart</string>
+    <array name="quantity">
+        <item>Quintal</item>
+        <item>Kg</item>
+        <item>Dozens</item>
+        <item>Items</item>
+    </array>
+</resources>

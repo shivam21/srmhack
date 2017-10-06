@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "44668162191",
+    "firebase_url": "https://cropcart.firebaseio.com",
+    "project_id": "cropcart",
+    "storage_bucket": "cropcart.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:44668162191:android:01dee77db41c9fbc",
+        "android_client_info": {
+          "package_name": "com.cropcart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "44668162191-b8ia73ohoudhe3qablqspr26352eai9c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9K2PW9oSiPC0ryHMqPra0BAKOkf8UkKA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="end"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp">
+
+    <LinearLayout
+        android:id="@+id/mylayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+        android:paddingBottom="5sp"
+        android:paddingTop="5sp">
+
+
+        <TextView
+            android:id="@+id/adapter_chat_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8sp"
+            android:layout_marginStart="8sp"
+            android:autoLink="web"
+            android:background="@drawable/chatrounded2"
+            android:maxWidth="250dp"
+            android:textColor="@android:color/white"
+            tools:text="Rahul Agrawal is \na \ngood \nboy bu\nt he doe\ns not kn\now \nwh\nat\n he w\nan\nt\ns.\n" />
+
+        <ImageView
+            android:id="@+id/user1"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:layout_marginLeft="8sp"
+            android:src="@drawable/shareprofile" />
+    </LinearLayout>
+
+    <com.github.curioustechizen.ago.RelativeTimeTextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/mylayout"
+        android:layout_marginEnd="1sp"
+        android:layout_marginRight="1sp"
+        android:layout_toLeftOf="@+id/mylayout"
+        android:paddingBottom="5dp"
+        android:text="22:45"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="8sp" />
+</RelativeLayout>

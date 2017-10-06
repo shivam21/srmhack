@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/holo_blue_light"
+        android:gravity="center"
+        android:paddingBottom="8sp"
+        android:paddingRight="12sp"
+        android:paddingTop="8sp"
+        android:text="Submit"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/submit"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_light"
+            android:orientation="vertical"
+            app:title="Farm Details"
+            app:titleTextColor="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/choosepic"
+            android:layout_width="match_parent"
+            android:layout_height="150sp"
+            android:layout_marginTop="12sp"
+            android:src="@drawable/addimage" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12sp"
+            android:layout_marginRight="12sp"
+            android:text="Select Farm Size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12sp"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/size"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/roundedbutton4"
+                android:gravity="center"
+                android:padding="8sp"
+                android:text="&lt; 2.5 Acre" />
+
+            <TextView
+                android:id="@+id/size2"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/roundedbutton3"
+                android:gravity="center"
+                android:padding="8sp"
+                android:text="2.6 to 5.0 Acre" />
+
+            <TextView
+                android:id="@+id/size3"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/roundedbutton3"
+                android:gravity="center"
+                android:padding="4sp"
+                android:text="5.1 to 10.0 Acre" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/size4"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/roundedbutton3"
+                android:gravity="center"
+                android:padding="8sp"
+                android:text="10.1 to 25.0 Acre" />
+
+            <TextView
+                android:id="@+id/size5"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/roundedbutton3"
+                android:gravity="center"
+                android:padding="8sp"
+                android:text="&gt; 25.1 Acre" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12sp"
+            android:text="Select Crops Grown" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.flexbox.FlexboxLayout
+                android:id="@+id/flexbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:paddingTop="8dp"
+                app:alignContent="flex_start"
+                app:alignItems="flex_start"
+                app:flexDirection="row"
+                app:flexWrap="wrap"
+                app:justifyContent="flex_start" />
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>
